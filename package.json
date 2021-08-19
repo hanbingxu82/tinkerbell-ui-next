@@ -1,13 +1,22 @@
 {
   "name": "tinkerbell-ui-next",
   "version": "0.1.0",
-  "private": true,
+  "description": "一款简单而又优雅的ui组件库，欢迎大家支持",
+  "main": "lib/tinkerbell-ui-next.umd.min.js",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "hanbingxu"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name tinkerbell-ui-next --dest lib packages/index.ts",
+    "go": "npm publish --access=public"
   },
   "dependencies": {
+    "babel-eslint": "^10.1.0",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",

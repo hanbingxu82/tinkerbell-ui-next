@@ -1,20 +1,28 @@
+/*
+ * @Author: your name
+ * @Date: 2021-08-19 10:12:38
+ * @LastEditTime: 2021-08-19 10:48:38
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /tinkerbell-ui-next/.eslintrc.js
+ */
 module.exports = {
-  root: true,
   env: {
+    browser: true,
     node: true,
   },
   extends: [
-    "plugin:vue/vue3-essential",
-    "eslint:recommended",
-    "@vue/typescript/recommended",
-    "@vue/prettier",
-    "@vue/prettier/@typescript-eslint",
+    'plugin:vue/vue3-essential',
   ],
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 12,
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module',
   },
+  plugins: [
+    'vue',
+    '@typescript-eslint',
+  ],
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
   },
 };
