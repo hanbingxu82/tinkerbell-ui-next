@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-08-19 10:20:07
- * @LastEditTime: 2021-08-19 13:54:04
+ * @LastEditTime: 2021-08-19 16:38:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /tinkerbell-ui-next/packages/index.ts
@@ -9,6 +9,10 @@
 // 导入单个组件
 import tbButton from './Button/index'
 
+
+
+import "./assets/iconfont/iconfont.css"; //导入icon图标
+import "./assets/style/global.scss";
 // 以数组的结构保存组件，便于遍历
 const components = [
     tbButton

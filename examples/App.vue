@@ -1,14 +1,14 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-19 10:12:38
- * @LastEditTime: 2021-08-19 13:53:42
+ * @LastEditTime: 2021-08-19 16:39:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /tinkerbell-ui-next/examples/App.vue
 -->
 
 <template>
-  <tb-Button></tb-Button>
+  <tb-button type="success" loading>我陪你熬过了苦</tb-button>
   <div>{{ count }}</div>
   <button @click="countMethod" class="xiao">新增</button>
   <img :src="img + '/image_search/src=http%3A%2F%2Fa1.att.hudong.com%2F57%2F92%2F01300542193590138063924441627.jpg&refer=http%3A%2F%2Fa1.att.hudong.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1616717844&t=e7845b5d13738c4df684d05e2d0001fc'" alt="" />

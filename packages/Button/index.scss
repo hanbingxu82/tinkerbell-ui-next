@@ -1,0 +1,269 @@
+.iconfont {
+  vertical-align: baseline;
+}
+
+// 不考虑size大小问题
+.button_icon {
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+}
+
+// is_disabled 禁用
+.is_disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+// 文字按钮
+.button_text {
+  color: #1089ff;
+  cursor: pointer;
+}
+
+// loading加载动画
+
+/*---------自定义快速旋转（就是引用刚才自定义loading的动画）------*/
+.load {
+  animation: rotate 3s linear infinite;
+  display: inline-block;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(90deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(270deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.button {
+  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+}
+
+.button:focus,
+.button:hover {
+  color: #1089ff;
+  border-color: #c6e2ff;
+  background-color: #ecf5ff;
+}
+
+.button.is-plain:focus,
+.button.is-plain:hover {
+  background: #fff;
+  border-color: #1089ff;
+  color: #1089ff;
+}
+
+.button.is-plain:focus,
+.button.is-plain:hover {
+  background: #fff;
+  border-color: #1089ff;
+  color: #1089ff;
+}
+
+.is-round {
+  border-radius: 50px;
+}
+
+// 圆角按钮
+.button_primary.is-round {
+  border-radius: 50px;
+}
+
+.button_success.is-round {
+  border-radius: 50px;
+}
+
+.button_info.is-round {
+  border-radius: 50px;
+}
+
+.button_warning.is-round {
+  border-radius: 50px;
+}
+
+.button_danger.is-round {
+  border-radius: 50px;
+}
+
+// 朴素按钮
+.button_primary.is-plain {
+  color: #1089ff;
+  background: #ecf5ff;
+  border-color: #b3d8ff;
+}
+
+.button_primary.is-plain:focus,
+.button_primary.is-plain:hover {
+  background: #1089ff;
+  border-color: #1089ff;
+  color: #fff;
+}
+
+.button_success.is-plain {
+  color: #52c41a;
+  background: #f0f9eb;
+  border-color: #c2e7b0;
+}
+
+.button_success.is-plain:focus,
+.button_success.is-plain:hover {
+  background: #52c41a;
+  border-color: #52c41a;
+  color: #fff;
+}
+
+.button_info.is-plain {
+  color: #35495e;
+  background: #eaecee;
+  border-color: #d3d4d6;
+}
+
+.button_info.is-plain:focus,
+.button_info.is-plain:hover {
+  background: #35495e;
+  border-color: #35495e;
+  color: #fff;
+}
+
+.button_warning.is-plain {
+  color: #fea638;
+  background: #fdf6ec;
+  border-color: #f5dab1;
+}
+
+.button_warning.is-plain:focus,
+.button_warning.is-plain:hover {
+  background: #fea638;
+  border-color: #fea638;
+  color: #fff;
+}
+
+.button_danger.is-plain {
+  color: #ff4d4f;
+  background: #fef0f0;
+  border-color: #fbc4c4;
+}
+
+.button_danger.is-plain:focus,
+.button_danger.is-plain:hover {
+  background: #ff4d4f;
+  border-color: #ff4d4f;
+  color: #fff;
+}
+
+// type样式
+.button_primary {
+  color: #fff;
+  background-color: #1089ff;
+  border-color: #1089ff;
+}
+
+.button_primary:focus,
+.button_primary:hover {
+  background: #3fa0ff;
+  border-color: #3fa0ff;
+  color: #fff;
+}
+
+.button_success {
+  color: #fff;
+  background-color: #52c41a;
+  border-color: #52c41a;
+}
+
+.button_success:focus,
+.button_success:hover {
+  background: #74cf47;
+  border-color: #74cf47;
+  color: #fff;
+}
+
+.button_info {
+  color: #fff;
+  background-color: #35495e;
+  border-color: #35495e;
+}
+
+.button_info:focus,
+.button_info:hover {
+  background: #5d6d7e;
+  border-color: #5d6d7e;
+  color: #fff;
+}
+
+.button_warning {
+  color: #fff;
+  background-color: #fea638;
+  border-color: #fea638;
+}
+
+.button_warning:focus,
+.button_warning:hover {
+  background: #feb75f;
+  border-color: #feb75f;
+  color: #fff;
+}
+
+.button_danger {
+  color: #fff;
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.button_danger:focus,
+.button_danger:hover {
+  background: #ff7072;
+  border-color: #ff7072;
+  color: #fff;
+}
+
+// size样式
+.button_mini {
+  height: 30px;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 28px;
+  text-align: center;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.button_small {
+  height: 35px;
+  font-size: 14px;
+  display: inline-block;
+  line-height: 33px;
+  text-align: center;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.button_medium {
+  height: 40px;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 38px;
+  text-align: center;
+  padding: 0 24px;
+  cursor: pointer;
+}
