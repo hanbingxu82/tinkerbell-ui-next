@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-19 10:19:03
- * @LastEditTime: 2021-08-19 16:45:04
+ * @LastEditTime: 2021-08-20 16:16:32
  * @LastEditors: Please set LastEditors
  * @Description: tb-button组件
  * @FilePath: /tinkerbell-ui-next/packages/Button/index.vue
@@ -173,6 +173,6 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import './index.scss';
 </style>
