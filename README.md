@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-19 10:15:30
- * @LastEditTime: 2021-08-19 16:52:45
+ * @LastEditTime: 2021-08-20 09:47:17
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /tinkerbell-ui-next/README.md
@@ -37,6 +37,8 @@ app.use(Tinkerbell)
 #### 0.1.0 初始化，构建项目底层，推送到 NPM、GitHub
 
 #### 0.1.1 完成 tb-button 组件 引入 iconfont 图标库
+
+#### 0.1.2 完善 button 样式，以及全局 scss 变量
 
 ### 如有需要及时联系
 
