@@ -1,3 +1,5 @@
+@import '../assets/style/styleVariable.scss';
+
 .iconfont {
   vertical-align: baseline;
 }
@@ -18,7 +20,7 @@
 
 // 文字按钮
 .button_text {
-  color: #1089ff;
+  color: $color-primary;
   cursor: pointer;
 }
 
@@ -54,30 +56,31 @@
 
 .button {
   border-radius: 4px;
-  background: #ffffff;
+  background: $color-white;
   border: 1px solid #d9d9d9;
   box-sizing: border-box;
 }
 
 .button:focus,
 .button:hover {
-  color: #1089ff;
-  border-color: #c6e2ff;
-  background-color: #ecf5ff;
+  color: $color-primary;
+  background-color: $color-primary-light5;
+  border-color: $color-primary-light3;
+
 }
 
 .button.is-plain:focus,
 .button.is-plain:hover {
-  background: #fff;
-  border-color: #1089ff;
-  color: #1089ff;
+  background: $color-white;
+  border-color: $color-primary;
+  color: $color-primary;
 }
 
 .button.is-plain:focus,
 .button.is-plain:hover {
-  background: #fff;
-  border-color: #1089ff;
-  color: #1089ff;
+  background: $color-white;
+  border-color: $color-primary;
+  color: $color-primary;
 }
 
 .is-round {
@@ -107,134 +110,134 @@
 
 // 朴素按钮
 .button_primary.is-plain {
-  color: #1089ff;
-  background: #ecf5ff;
-  border-color: #b3d8ff;
+  color: $color-primary;
+  background: $color-primary-light5;
+  border-color: $color-primary-light3;
 }
 
 .button_primary.is-plain:focus,
 .button_primary.is-plain:hover {
-  background: #1089ff;
-  border-color: #1089ff;
-  color: #fff;
+  background: $color-primary;
+  border-color: $color-primary;
+  color: $color-white;
 }
 
 .button_success.is-plain {
-  color: #52c41a;
-  background: #f0f9eb;
-  border-color: #c2e7b0;
+  color: $color-success;
+  background: $color-success-light5;
+  border-color: $color-success-light3;
 }
 
 .button_success.is-plain:focus,
 .button_success.is-plain:hover {
-  background: #52c41a;
-  border-color: #52c41a;
-  color: #fff;
+  background: $color-success;
+  border-color: $color-success;
+  color: $color-white;
 }
 
 .button_info.is-plain {
-  color: #35495e;
-  background: #eaecee;
-  border-color: #d3d4d6;
+  color: $color-info;
+  background: $color-info-light5;
+  border-color: $color-info-light3;
 }
 
 .button_info.is-plain:focus,
 .button_info.is-plain:hover {
-  background: #35495e;
-  border-color: #35495e;
-  color: #fff;
+  background: $color-info;
+  border-color: $color-info;
+  color: $color-white;
 }
 
 .button_warning.is-plain {
-  color: #fea638;
-  background: #fdf6ec;
-  border-color: #f5dab1;
+  color: $color-warning;
+  background: $color-warning-light5;
+  border-color: $color-warning-light3;
 }
 
 .button_warning.is-plain:focus,
 .button_warning.is-plain:hover {
-  background: #fea638;
-  border-color: #fea638;
-  color: #fff;
+  background: $color-warning;
+  border-color: $color-warning;
+  color: $color-white;
 }
 
 .button_danger.is-plain {
-  color: #ff4d4f;
-  background: #fef0f0;
-  border-color: #fbc4c4;
+  color: $color-danger;
+  background: $color-danger-light5;
+  border-color: $color-danger-light3;
 }
 
 .button_danger.is-plain:focus,
 .button_danger.is-plain:hover {
-  background: #ff4d4f;
-  border-color: #ff4d4f;
-  color: #fff;
+  background: $color-danger;
+  border-color: $color-danger;
+  color: $color-white;
 }
 
 // type样式
 .button_primary {
-  color: #fff;
-  background-color: #1089ff;
-  border-color: #1089ff;
+  color: $color-white;
+  background-color: $color-primary;
+  border-color: $color-primary;
 }
 
 .button_primary:focus,
 .button_primary:hover {
-  background: #3fa0ff;
-  border-color: #3fa0ff;
-  color: #fff;
+  background: $color-primary-light2;
+  border-color: $color-primary-light2;
+  color: $color-white;
 }
 
 .button_success {
-  color: #fff;
-  background-color: #52c41a;
-  border-color: #52c41a;
+  color: $color-white;
+  background-color: $color-success;
+  border-color: $color-success;
 }
 
 .button_success:focus,
 .button_success:hover {
-  background: #74cf47;
-  border-color: #74cf47;
-  color: #fff;
+  background: $color-success-light2;
+  border-color: $color-success-light2;
+  color: $color-white;
 }
 
 .button_info {
-  color: #fff;
-  background-color: #35495e;
-  border-color: #35495e;
+  color: $color-white;
+  background-color: $color-info;
+  border-color: $color-info;
 }
 
 .button_info:focus,
 .button_info:hover {
-  background: #5d6d7e;
-  border-color: #5d6d7e;
-  color: #fff;
+  background: $color-info-light2;
+  border-color: $color-info-light2;
+  color: $color-white;
 }
 
 .button_warning {
-  color: #fff;
-  background-color: #fea638;
-  border-color: #fea638;
+  color: $color-white;
+  background-color: $color-warning;
+  border-color: $color-warning;
 }
 
 .button_warning:focus,
 .button_warning:hover {
-  background: #feb75f;
-  border-color: #feb75f;
-  color: #fff;
+  background: $color-warning-light2;
+  border-color: $color-warning-light2;
+  color: $color-white;
 }
 
 .button_danger {
-  color: #fff;
-  background-color: #ff4d4f;
-  border-color: #ff4d4f;
+  color: $color-white;
+  background-color: $color-danger;
+  border-color: $color-danger;
 }
 
 .button_danger:focus,
 .button_danger:hover {
-  background: #ff7072;
-  border-color: #ff7072;
-  color: #fff;
+  background: $color-danger-light2;
+  border-color: $color-danger-light2;
+  color: $color-white;
 }
 
 // size样式
