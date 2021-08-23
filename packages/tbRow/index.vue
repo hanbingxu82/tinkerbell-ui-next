@@ -1,10 +1,10 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-23 09:58:57
- * @LastEditTime: 2021-08-23 10:45:20
+ * @LastEditTime: 2021-08-23 13:54:31
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: /tinkerbell-ui-next/packages/Row/index.vue
+ * @FilePath: /tinkerbell-ui-next/packages/tbRow/index.vue
 -->
 <template>
   <div v-bind="$attrs" :class="`tb-row`" :style="`${tbjustify} ${tbalign}`"><slot></slot></div>

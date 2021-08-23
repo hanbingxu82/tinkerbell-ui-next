@@ -10,10 +10,10 @@ import './assets/iconfont/iconfont.css' //导入icon图标
 import './assets/style/global.scss'
 
 // 导入多个组件
-import tbButton from './Button/index'
-import tbLink from './Link/index'
-import tbRow from './Row/index'
-import tbCol from './Col/index'
+import tbButton from './tbButton/index'
+import tbLink from './tbLink/index'
+import tbRow from './tbRow/index'
+import tbCol from './tbCol/index'
 
 // 用于遍历注册
 const components = [tbButton, tbLink, tbRow, tbCol]

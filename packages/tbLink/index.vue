@@ -1,10 +1,10 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-20 15:45:47
- * @LastEditTime: 2021-08-23 10:18:02
+ * @LastEditTime: 2021-08-23 13:54:18
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: /tinkerbell-ui-next/packages/Link/index.vue
+ * @FilePath: /tinkerbell-ui-next/packages/tbLink/index.vue
 -->
 <template>
   <a v-if="!tbIcon && href" :target="target" v-bind="$attrs" :href="href" :class="`tb-link ${tbType} ${tbDisabled} ${tbUnderline}`"> <slot></slot> </a>

@@ -1,10 +1,10 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-19 10:19:03
- * @LastEditTime: 2021-08-20 16:16:32
+ * @LastEditTime: 2021-08-23 13:53:43
  * @LastEditors: Please set LastEditors
  * @Description: tb-button组件
- * @FilePath: /tinkerbell-ui-next/packages/Button/index.vue
+ * @FilePath: /tinkerbell-ui-next/packages/tbButton/index.vue
 -->
 <template>
   <!-- vue3 将对应的 $listeners  $attrs 统一合并成了 $attrs -->

@@ -1,10 +1,10 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-23 09:59:23
- * @LastEditTime: 2021-08-23 11:44:57
+ * @LastEditTime: 2021-08-23 13:53:51
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: /tinkerbell-ui-next/packages/Col/index.vue
+ * @FilePath: /tinkerbell-ui-next/packages/tbCol/index.vue
 -->
 <template>
   <div v-bind="$attrs" :class="`tb-col ${tbxs} ${tbsm} ${tbmd} ${tblg} ${tbxl} `" :style="`width:${num * span}%;${gutter ? gutter + ';' : ''} ${tbOffset} ${tbPush} ${tbPull}`"><slot></slot></div>
