@@ -1,0 +1,8 @@
+@import '../assets/style/styleVariable.scss';
+.tb-row {
+    /* height: 36px; */
+    min-height: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}

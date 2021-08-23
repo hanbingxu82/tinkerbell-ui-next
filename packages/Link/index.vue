@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-20 15:45:47
- * @LastEditTime: 2021-08-20 16:16:58
+ * @LastEditTime: 2021-08-23 10:18:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /tinkerbell-ui-next/packages/Link/index.vue
@@ -62,7 +62,7 @@ export default defineComponent({
     const refData = toRefs(data)
 
     // 页面加载判断当前按钮类型
-    const Ptype = () => {
+    const Ptype = (): void => {
       if (props.type == 'primary') {
         refData.tbType.value = 'a_primary'
       } else if (props.type == 'success') {
@@ -76,7 +76,7 @@ export default defineComponent({
       }
     }
     // 判断是否是禁用
-    const PDisabled = () => {
+    const PDisabled = (): void => {
       if (props.disabled) {
         refData.tbDisabled.value = ' is_disabled '
       } else {
@@ -84,7 +84,7 @@ export default defineComponent({
       }
     }
     // 判断是否有下划线
-    const Punderline = () => {
+    const Punderline = (): void => {
       if (props.underline) {
         refData.tbUnderline.value = ' is_underline '
       } else {
@@ -92,7 +92,7 @@ export default defineComponent({
       }
     }
     // 页面加载判断是否为图标链接
-    const Picon = () => {
+    const Picon = (): void => {
       if (props.icon) {
         refData.tbIcon.value = ' iconfont ' + props.icon
       } else {

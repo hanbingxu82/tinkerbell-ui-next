@@ -1,37 +1,13 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-19 10:12:38
- * @LastEditTime: 2021-08-20 16:26:59
+ * @LastEditTime: 2021-08-23 11:59:05
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /tinkerbell-ui-next/examples/App.vue
 -->
 
 <template>
-  <div>
-    <tb-link href="/" target="_blank">默认链接</tb-link>
-    <tb-link type="primary">主要链接</tb-link>
-    <tb-link type="success">成功链接</tb-link>
-    <tb-link type="warning">警告链接</tb-link>
-    <tb-link type="danger">危险链接</tb-link>
-    <tb-link type="info">信息链接</tb-link>
-  </div>
-  <div>
-    <tb-link disabled>默认链接</tb-link>
-    <tb-link type="primary" disabled>主要链接</tb-link>
-    <tb-link type="success" disabled>成功链接</tb-link>
-    <tb-link type="warning" disabled>警告链接</tb-link>
-    <tb-link type="danger" disabled>危险链接</tb-link>
-    <tb-link type="info" disabled>信息链接</tb-link>
-  </div>
-  <div>
-    <tb-link :underline="false">无下划线</tb-link>
-    <tb-link>有下划线</tb-link>
-  </div>
-  <div>
-    <tb-link icon="iconfont icon-edit">编辑</tb-link>
-    <tb-link>查看<i class="iconfont icon-browse"></i> </tb-link>
-  </div>
 
   <div>{{ count }}</div>
   <button @click="countMethod" class="xiao">新增</button>
@@ -97,4 +73,5 @@ export default defineComponent({
 .xiao {
   color: red;
 }
+
 </style>
