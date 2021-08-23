@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-08-19 10:20:07
- * @LastEditTime: 2021-08-23 11:45:54
+ * @LastEditTime: 2021-08-23 14:42:17
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /tinkerbell-ui-next/packages/index.ts
@@ -14,9 +14,14 @@ import tbButton from './tbButton/index'
 import tbLink from './tbLink/index'
 import tbRow from './tbRow/index'
 import tbCol from './tbCol/index'
+import tbContainer from './tbContainer/index'
+import tbHeader from './tbHeader/index'
+import tbAside from './tbAside/index'
+import tbMain from './tbMain/index'
+import tbFooter from './tbFooter/index'
 
 // 用于遍历注册
-const components = [tbButton, tbLink, tbRow, tbCol]
+const components = [tbButton, tbLink, tbRow, tbCol, tbContainer, tbHeader, tbAside, tbMain, tbFooter]
 
 // install 方法：因为 Vue.use 的时候找的就是install方法
 const install: any = function (Vue: any) {
