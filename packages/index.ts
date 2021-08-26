@@ -19,9 +19,10 @@ import tbHeader from './tbHeader/index'
 import tbAside from './tbAside/index'
 import tbMain from './tbMain/index'
 import tbFooter from './tbFooter/index'
+import tbTag from './tbTag/index'
 
 // 用于遍历注册
-const components = [tbButton, tbLink, tbRow, tbCol, tbContainer, tbHeader, tbAside, tbMain, tbFooter]
+const components = [tbButton, tbLink, tbRow, tbCol, tbContainer, tbHeader, tbAside, tbMain, tbFooter, tbTag]
 
 // install 方法：因为 Vue.use 的时候找的就是install方法
 const install: any = function (Vue: any) {

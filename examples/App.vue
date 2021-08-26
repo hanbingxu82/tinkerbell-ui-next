@@ -1,63 +1,29 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-19 10:12:38
- * @LastEditTime: 2021-08-23 14:46:25
+ * @LastEditTime: 2021-08-26 15:26:51
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /tinkerbell-ui-next/examples/App.vue
 -->
 
 <template>
-  <tb-container>
-    <tb-header>Header</tb-header>
-    <tb-main>Main</tb-main>
-  </tb-container>
-  <tb-container>
-    <tb-header>Header</tb-header>
-    <tb-main>Main</tb-main>
-    <tb-footer>Footer</tb-footer>
-  </tb-container>
+  <tb-tag size="medium" closable>中等标签</tb-tag>
+  <tb-tag size="small" closable>小型标签</tb-tag>
+  <tb-tag size="mini" closable>超小标签</tb-tag>
+  <div class="tag-group">
+    <span class="tag-group__title">Dark</span>
+    <tb-tag v-for="item in tags" :key="item.name" :type="item.type" effect="dark">
+      {{ item.name }}
+    </tb-tag>
+  </div>
+  <div class="tag-group">
+    <span class="tag-group__title">Plain</span>
+    <tb-tag v-for="item in tags" :key="item.name" :type="item.type" effect="plain">
+      {{ item.name }}
+    </tb-tag>
+  </div>
 
-  <tb-container>
-    <tb-aside width="200px">Aside</tb-aside>
-    <tb-main>Main</tb-main>
-  </tb-container>
-
-  <tb-container>
-    <tb-header>Header</tb-header>
-    <tb-container>
-      <tb-aside width="200px">Aside</tb-aside>
-      <tb-main>Main</tb-main>
-    </tb-container>
-  </tb-container>
-
-  <tb-container>
-    <tb-header>Header</tb-header>
-    <tb-container>
-      <tb-aside width="200px">Aside</tb-aside>
-      <tb-container>
-        <tb-main>Main</tb-main>
-        <tb-footer>Footer</tb-footer>
-      </tb-container>
-    </tb-container>
-  </tb-container>
-
-  <tb-container>
-    <tb-aside width="200px">Aside</tb-aside>
-    <tb-container>
-      <tb-header>Header</tb-header>
-      <tb-main>Main</tb-main>
-    </tb-container>
-  </tb-container>
-
-  <tb-container>
-    <tb-aside width="200px">Aside</tb-aside>
-    <tb-container>
-      <tb-header>Header</tb-header>
-      <tb-main>Main</tb-main>
-      <tb-footer>Footer</tb-footer>
-    </tb-container>
-  </tb-container>
   <div>{{ count }}</div>
   <button @click="countMethod" class="xiao">新增</button>
   <img :src="img + '/image_search/src=http%3A%2F%2Fa1.att.hudong.com%2F57%2F92%2F01300542193590138063924441627.jpg&refer=http%3A%2F%2Fa1.att.hudong.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1616717844&t=e7845b5d13738c4df684d05e2d0001fc'" alt="" />
@@ -79,6 +45,15 @@ export default defineComponent({
     const img: Ref = ref<string>('https://gimg2.baidu.com')
     const count: Ref = ref<number>(1)
     const obj: InPerson = reactive({ name: '张三', age: 18, green: true })
+    const data = reactive({
+      tags: [
+        { name: '标签一', type: 'primary' },
+        { name: '标签二', type: 'success' },
+        { name: '标签三', type: 'info' },
+        { name: '标签四', type: 'warning' },
+        { name: '标签五', type: 'danger' },
+      ],
+    })
     console.log(count, obj)
     const countMethod = () => {
       count.value++
@@ -112,6 +87,7 @@ export default defineComponent({
       count,
       img,
       obj,
+      ...data,
       countMethod,
     }
   },

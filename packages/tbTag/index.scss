@@ -1,0 +1,149 @@
+@import '../assets//style/styleVariable.scss';
+
+.iconfont {
+    vertical-align: middle;
+}
+
+.bold {
+    cursor: pointer;
+}
+
+.tag {
+    margin: 0 2px;
+    border-radius: 4px;
+    background: #ffffff;
+}
+
+
+
+/* size 样式 */
+.tag_mini {
+    height: 30px;
+    font-size: 12px;
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    line-height: 28px;
+    text-align: center;
+    padding: 0 16px;
+    /* cursor: pointer; */
+}
+
+.tag_small {
+    height: 35px;
+    font-size: 14px;
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    line-height: 33px;
+    text-align: center;
+    padding: 0 20px;
+    /* cursor: pointer; */
+}
+
+.tag_medium {
+    height: 40px;
+    font-size: 16px;
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    line-height: 38px;
+    text-align: center;
+    padding: 0 24px;
+    /* cursor: pointer; */
+}
+
+/* effect 按钮样式 */
+.tag_primary {
+    color: #1089ff;
+    background-color: #ecf5ff;
+    border-color: #d9ecff;
+}
+
+.tag_success {
+    color: #52c41a;
+    background-color: #f0f9eb;
+    border-color: #e1f3d8;
+}
+
+.tag_info {
+    color: #35495e;
+    background-color: #eaecee;
+    border-color: #e9e9eb;
+}
+
+.tag_warning {
+    color: #fea638;
+    background-color: #fdf6ec;
+    border-color: #faecd8;
+}
+
+.tag_danger {
+    color: #ff4d4f;
+    background-color: #fef0f0;
+    border-color: #fde2e2;
+}
+
+.tag_primary.tag_effect_dark {
+    color: #fff;
+    background-color: #1089ff;
+    border-color: #1089ff;
+}
+
+
+.tag_success.tag_effect_dark {
+    color: #fff;
+    background-color: #52c41a;
+    border-color: #52c41a;
+}
+
+
+
+.tag_info.tag_effect_dark {
+    color: #fff;
+    background-color: #35495e;
+    border-color: #35495e;
+}
+
+
+.tag_warning.tag_effect_dark {
+    color: #fff;
+    background-color: #fea638;
+    border-color: #fea638;
+}
+
+.tag_danger.tag_effect_dark {
+    color: #fff;
+    background-color: #ff4d4f;
+    border-color: #ff4d4f;
+}
+
+.tag_primary.tag_effect_plain {
+    color: #1089ff;
+    background: #ffffff;
+    border-color: #b3d8ff;
+}
+
+.tag_success.tag_effect_plain {
+    color: #52c41a;
+    background: #ffffff;
+    border-color: #c2e7b0;
+}
+
+
+.tag_info.tag_effect_plain {
+    color: #35495e;
+    background: #ffffff;
+    border-color: #d3d4d6;
+}
+
+
+.tag_warning.tag_effect_plain {
+    color: #fea638;
+    background: #ffffff;
+    border-color: #f5dab1;
+}
+
+
+.tag_danger.tag_effect_plain {
+    color: #ff4d4f;
+    background: #ffffff;
+    border-color: #fbc4c4;
+}
