@@ -1,13 +1,24 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-19 10:12:38
- * @LastEditTime: 2021-08-26 15:26:51
+ * @LastEditTime: 2021-08-30 10:17:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /tinkerbell-ui-next/examples/App.vue
 -->
 
 <template>
+  <div>
+    <div>展开</div>
+    <div>
+      <tb-showmore :len="10" text="文本超出显示长度，折叠起来，通过len属性显示从何处开始折叠"> </tb-showmore>
+    </div>
+    <div style="margin-top: 10px">展开 / 收起</div>
+    <div>
+      <tb-showmore allowFold :len="10" show-text="show" hidden-text="hidden" text="文本超出显示长度，折叠起来，通过len属性显示从何处开始折叠"> </tb-showmore>
+    </div>
+  </div>
+
   <tb-tag size="medium" closable>中等标签</tb-tag>
   <tb-tag size="small" closable>小型标签</tb-tag>
   <tb-tag size="mini" closable>超小标签</tb-tag>
