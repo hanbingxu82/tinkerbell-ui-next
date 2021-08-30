@@ -1,40 +1,28 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-19 10:12:38
- * @LastEditTime: 2021-08-30 10:17:24
+ * @LastEditTime: 2021-08-30 15:23:09
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /tinkerbell-ui-next/examples/App.vue
 -->
 
 <template>
-  <div>
-    <div>展开</div>
-    <div>
-      <tb-showmore :len="10" text="文本超出显示长度，折叠起来，通过len属性显示从何处开始折叠"> </tb-showmore>
-    </div>
-    <div style="margin-top: 10px">展开 / 收起</div>
-    <div>
-      <tb-showmore allowFold :len="10" show-text="show" hidden-text="hidden" text="文本超出显示长度，折叠起来，通过len属性显示从何处开始折叠"> </tb-showmore>
-    </div>
-  </div>
-
-  <tb-tag size="medium" closable>中等标签</tb-tag>
-  <tb-tag size="small" closable>小型标签</tb-tag>
-  <tb-tag size="mini" closable>超小标签</tb-tag>
-  <div class="tag-group">
-    <span class="tag-group__title">Dark</span>
-    <tb-tag v-for="item in tags" :key="item.name" :type="item.type" effect="dark">
-      {{ item.name }}
-    </tb-tag>
-  </div>
-  <div class="tag-group">
-    <span class="tag-group__title">Plain</span>
-    <tb-tag v-for="item in tags" :key="item.name" :type="item.type" effect="plain">
-      {{ item.name }}
-    </tb-tag>
-  </div>
-
+  <tb-breadcrumb separator="/">
+    <tb-breadcrumb-item :to="{ path: '/' }">首页</tb-breadcrumb-item>
+    <tb-breadcrumb-item><a href="/">活动管理</a></tb-breadcrumb-item>
+    <tb-breadcrumb-item>活动列表</tb-breadcrumb-item>
+    <tb-breadcrumb-item>活动详情</tb-breadcrumb-item>
+  </tb-breadcrumb>
+  <br />
+  <tb-breadcrumb separator-class="icon-arrow-right-bold">
+    <tb-breadcrumb-item :to="{ path: '/' }">首页</tb-breadcrumb-item>
+    <tb-breadcrumb-item>活动管理</tb-breadcrumb-item>
+    <tb-breadcrumb-item>活动列表</tb-breadcrumb-item>
+    <tb-breadcrumb-item>活动详情</tb-breadcrumb-item>
+  </tb-breadcrumb>
+  <br />
+  <br />
   <div>{{ count }}</div>
   <button @click="countMethod" class="xiao">新增</button>
   <img :src="img + '/image_search/src=http%3A%2F%2Fa1.att.hudong.com%2F57%2F92%2F01300542193590138063924441627.jpg&refer=http%3A%2F%2Fa1.att.hudong.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1616717844&t=e7845b5d13738c4df684d05e2d0001fc'" alt="" />
