@@ -11,7 +11,7 @@
 .tag {
     margin: 0 2px;
     border-radius: 4px;
-    background: #ffffff;
+    background: $color-white;
 }
 
 
@@ -22,7 +22,7 @@
     font-size: 12px;
     display: inline-block;
     border: 1px solid #eeeeee;
-    line-height: 28px;
+    line-height: 30px;
     text-align: center;
     padding: 0 16px;
     /* cursor: pointer; */
@@ -33,7 +33,7 @@
     font-size: 14px;
     display: inline-block;
     border: 1px solid #eeeeee;
-    line-height: 33px;
+    line-height: 35px;
     text-align: center;
     padding: 0 20px;
     /* cursor: pointer; */
@@ -44,7 +44,7 @@
     font-size: 16px;
     display: inline-block;
     border: 1px solid #eeeeee;
-    line-height: 38px;
+    line-height: 40px;
     text-align: center;
     padding: 0 24px;
     /* cursor: pointer; */
@@ -52,98 +52,98 @@
 
 /* effect 按钮样式 */
 .tag_primary {
-    color: #1089ff;
-    background-color: #ecf5ff;
-    border-color: #d9ecff;
+    color: $color-primary;
+    background-color: $color-primary-light5;
+    border-color: $color-primary-light3;
 }
 
 .tag_success {
-    color: #52c41a;
-    background-color: #f0f9eb;
-    border-color: #e1f3d8;
+    color: $color-success;
+    background-color: $color-success-light5;
+    border-color: $color-success-light3;
 }
 
 .tag_info {
-    color: #35495e;
-    background-color: #eaecee;
-    border-color: #e9e9eb;
+    color: $color-info;
+    background-color: $color-info-light5;
+    border-color: $color-info-light3;
 }
 
 .tag_warning {
-    color: #fea638;
-    background-color: #fdf6ec;
-    border-color: #faecd8;
+    color: $color-warning;
+    background-color: $color-warning-light5;
+    border-color: $color-warning-light3;
 }
 
 .tag_danger {
-    color: #ff4d4f;
-    background-color: #fef0f0;
-    border-color: #fde2e2;
+    color: $color-danger;
+    background-color: $color-danger-light5;
+    border-color: $color-danger-light3;
 }
 
 .tag_primary.tag_effect_dark {
-    color: #fff;
-    background-color: #1089ff;
-    border-color: #1089ff;
+    color: $color-white;
+    background-color: $color-primary;
+    border-color: $color-primary;
 }
 
 
 .tag_success.tag_effect_dark {
-    color: #fff;
-    background-color: #52c41a;
-    border-color: #52c41a;
+    color: $color-white;
+    background-color: $color-success;
+    border-color: $color-success;
 }
 
 
 
 .tag_info.tag_effect_dark {
-    color: #fff;
-    background-color: #35495e;
-    border-color: #35495e;
+    color: $color-white;
+    background-color: $color-info;
+    border-color: $color-info;
 }
 
 
 .tag_warning.tag_effect_dark {
-    color: #fff;
-    background-color: #fea638;
-    border-color: #fea638;
+    color: $color-white;
+    background-color: $color-warning;
+    border-color: $color-warning;
 }
 
 .tag_danger.tag_effect_dark {
-    color: #fff;
-    background-color: #ff4d4f;
-    border-color: #ff4d4f;
+    color: $color-white;
+    background-color: $color-danger;
+    border-color: $color-danger;
 }
 
 .tag_primary.tag_effect_plain {
-    color: #1089ff;
-    background: #ffffff;
-    border-color: #b3d8ff;
+    color: $color-primary;
+    background: $color-white;
+    border-color: $color-primary-light3;
 }
 
 .tag_success.tag_effect_plain {
-    color: #52c41a;
-    background: #ffffff;
-    border-color: #c2e7b0;
+    color: $color-success;
+    background: $color-white;
+    border-color: $color-success-light3;
 }
 
 
 .tag_info.tag_effect_plain {
-    color: #35495e;
-    background: #ffffff;
-    border-color: #d3d4d6;
+    color: $color-info;
+    background: $color-white;
+    border-color: $color-info-light3;
 }
 
 
 .tag_warning.tag_effect_plain {
-    color: #fea638;
-    background: #ffffff;
-    border-color: #f5dab1;
+    color: $color-warning;
+    background: $color-white;
+    border-color: $color-warning-light3;
 }
 
 
 .tag_danger.tag_effect_plain {
-    color: #ff4d4f;
-    background: #ffffff;
-    border-color: #fbc4c4;
+    color: $color-danger;
+    background: $color-white;
+    border-color: $color-danger-light3;
 }
