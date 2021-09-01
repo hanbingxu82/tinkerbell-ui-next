@@ -1,27 +1,42 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-19 10:12:38
- * @LastEditTime: 2021-08-30 15:23:09
+ * @LastEditTime: 2021-09-01 15:01:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /tinkerbell-ui-next/examples/App.vue
 -->
 
 <template>
-  <tb-breadcrumb separator="/">
-    <tb-breadcrumb-item :to="{ path: '/' }">首页</tb-breadcrumb-item>
-    <tb-breadcrumb-item><a href="/">活动管理</a></tb-breadcrumb-item>
-    <tb-breadcrumb-item>活动列表</tb-breadcrumb-item>
-    <tb-breadcrumb-item>活动详情</tb-breadcrumb-item>
-  </tb-breadcrumb>
+  <div>
+    <tb-badge :value="12" class="item">
+      <tb-button size="small">评论</tb-button>
+    </tb-badge>
+    <tb-badge :value="3" class="item">
+      <tb-button size="small">回复</tb-button>
+    </tb-badge>
+    <tb-badge :value="1" class="item" type="primary">
+      <tb-button size="small">评论</tb-button>
+    </tb-badge>
+    <tb-badge :value="2" class="item" type="warning">
+      <tb-button size="small">回复</tb-button>
+    </tb-badge>
+  </div>
   <br />
-  <tb-breadcrumb separator-class="icon-arrow-right-bold">
-    <tb-breadcrumb-item :to="{ path: '/' }">首页</tb-breadcrumb-item>
-    <tb-breadcrumb-item>活动管理</tb-breadcrumb-item>
-    <tb-breadcrumb-item>活动列表</tb-breadcrumb-item>
-    <tb-breadcrumb-item>活动详情</tb-breadcrumb-item>
-  </tb-breadcrumb>
-  <br />
+  <div>
+    <tb-badge :value="200" :max="99" class="item">
+      <tb-button size="small">评论</tb-button>
+    </tb-badge>
+    <tb-badge :value="100" :max="10" class="item">
+      <tb-button size="small">回复</tb-button>
+    </tb-badge>
+  </div>
+  <div>
+    <tb-badge is-dot class="item">数据查询</tb-badge>
+    <tb-badge is-dot class="item">
+      <tb-button class="share-button" icon="icon-home" type="primary"></tb-button>
+    </tb-badge>
+  </div>
   <br />
   <div>{{ count }}</div>
   <button @click="countMethod" class="xiao">新增</button>
@@ -130,5 +145,8 @@ body > .tb-container {
 
 .tb-container:nth-child(7) .tb-aside {
   line-height: 280px;
+}
+.item {
+  margin: 10px;
 }
 </style>
