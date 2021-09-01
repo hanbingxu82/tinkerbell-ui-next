@@ -27,7 +27,7 @@
 }
 
 .tb-badge__content {
-    background-color: #ff4d4f;
+    background-color: $color-danger;
     border-radius: 10px;
     color: #fff;
     display: inline-block;
@@ -41,23 +41,23 @@
 }
 
 .tb-badge__content.tb-badge__content--warning {
-    background-color: #fea638;
+    background-color: $color-warning;
 }
 
 .tb-badge__content.tb-badge__content--primary {
-    background-color: #1089ff;
+    background-color:$color-primary;
 }
 
 .tb-badge__content.tb-badge__content--danger {
-    background-color: #ff4d4f;
+    background-color: $color-danger;
 }
 
 .tb-badge__content.tb-badge__content--info {
-    background-color: #35495e;
+    background-color: $color-info;
 }
 
 .tb-badge__content.tb-badge__content--success {
-    background-color: #52c41a;
+    background-color: $color-success;
 }
 
 .tb-zoom-in-center-enter-active,
