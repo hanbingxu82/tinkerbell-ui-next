@@ -1,42 +1,15 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-19 10:12:38
- * @LastEditTime: 2021-09-01 15:01:23
+ * @LastEditTime: 2021-09-06 09:24:55
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /tinkerbell-ui-next/examples/App.vue
 -->
 
 <template>
-  <div>
-    <tb-badge :value="12" class="item">
-      <tb-button size="small">评论</tb-button>
-    </tb-badge>
-    <tb-badge :value="3" class="item">
-      <tb-button size="small">回复</tb-button>
-    </tb-badge>
-    <tb-badge :value="1" class="item" type="primary">
-      <tb-button size="small">评论</tb-button>
-    </tb-badge>
-    <tb-badge :value="2" class="item" type="warning">
-      <tb-button size="small">回复</tb-button>
-    </tb-badge>
-  </div>
-  <br />
-  <div>
-    <tb-badge :value="200" :max="99" class="item">
-      <tb-button size="small">评论</tb-button>
-    </tb-badge>
-    <tb-badge :value="100" :max="10" class="item">
-      <tb-button size="small">回复</tb-button>
-    </tb-badge>
-  </div>
-  <div>
-    <tb-badge is-dot class="item">数据查询</tb-badge>
-    <tb-badge is-dot class="item">
-      <tb-button class="share-button" icon="icon-home" type="primary"></tb-button>
-    </tb-badge>
-  </div>
+  <tb-page-header @back="goBack" content="详情页面"></tb-page-header>
+
   <br />
   <div>{{ count }}</div>
   <button @click="countMethod" class="xiao">新增</button>
@@ -97,18 +70,22 @@ export default defineComponent({
       console.log('页面移除之后我执行啦')
     })
     console.log(isProxy(ref({})))
+    const goBack = ()=>{
+      console.log('点击了返还！')
+    }
     return {
       count,
       img,
       obj,
       ...data,
       countMethod,
+      goBack
     }
   },
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .xiao {
   color: red;
 }
