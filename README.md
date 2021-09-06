@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-19 10:15:30
- * @LastEditTime: 2021-09-01 15:05:49
+ * @LastEditTime: 2021-09-06 09:27:01
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /tinkerbell-ui-next/README.md
@@ -53,6 +53,8 @@ app.use(Tinkerbell)
 #### 0.1.8 完成 tb-breadcrumb、tb-breadcrumbItem 面包屑组件
 
 #### 0.1.9 完成 tb-badge 红点标记组件
+
+#### 0.2.0 完成 tb-page-header 返回页头组件
 
 ### 如有需要及时联系
 
