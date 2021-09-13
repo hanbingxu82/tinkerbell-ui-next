@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-19 10:12:38
- * @LastEditTime: 2021-09-06 09:24:55
+ * @LastEditTime: 2021-09-13 13:57:07
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /tinkerbell-ui-next/examples/App.vue
@@ -9,7 +9,7 @@
 
 <template>
   <tb-page-header @back="goBack" content="详情页面"></tb-page-header>
-
+  测试代码
   <br />
   <div>{{ count }}</div>
   <button @click="countMethod" class="xiao">新增</button>
