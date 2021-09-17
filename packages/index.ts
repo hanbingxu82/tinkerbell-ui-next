@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-08-19 10:20:07
- * @LastEditTime: 2021-09-03 15:50:52
+ * @LastEditTime: 2021-09-16 16:57:05
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /tinkerbell-ui-next/packages/index.ts
@@ -25,9 +25,10 @@ import tbBreadcrumb from './tbBreadcrumb/index'
 import tbBreadcrumbItem from './tbBreadcrumbItem/index'
 import tbBadge from './tbBadge/index'
 import tbPageHeader from './tbPageHeader/index'
+import tbAvatar from './tbAvatar/index'
 
 // 用于遍历注册
-const components = [tbButton, tbLink, tbRow, tbCol, tbContainer, tbHeader, tbAside, tbMain, tbFooter, tbTag, tbShowmore, tbBreadcrumb, tbBreadcrumbItem, tbBadge, tbPageHeader]
+const components = [tbButton, tbLink, tbRow, tbCol, tbContainer, tbHeader, tbAside, tbMain, tbFooter, tbTag, tbShowmore, tbBreadcrumb, tbBreadcrumbItem, tbBadge, tbPageHeader,tbAvatar]
 
 // install 方法：因为 Vue.use 的时候找的就是install方法
 const install: any = function (Vue: any) {
